@@ -1,0 +1,25 @@
+{% include 'header.html' %}
+<main>
+
+  
+
+      <a href="#" ><h2>Test btn</h2> </a>
+        </main>
+
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+
+    {% comment %} <script src="script.js"></script> {% endcomment %}
+  </body>
+</html>
+
+
+{% comment %} 
+Notes -  {{request.path}} - Used to print the path on website;
+
+2. {% url 'home' as url %} #alias url can be same
+class = "{% if request.path == url %} active {% endif %} 
+
+3. onmouseover / onmouseout is used to stop or play marque by mouse hover
+{% endcomment %}

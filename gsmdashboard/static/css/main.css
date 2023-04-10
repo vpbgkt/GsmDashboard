@@ -1,0 +1,71 @@
+body {
+    background-image: url('/static/images/pexels.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+  }
+  h1 {
+    color: #dd1b1b;
+    border: 34px;
+    border-radius: 50px;
+    background-color: rgb(14, 216, 216);
+    text-decoration-color: rgb(42, 250, 226);
+    font-style: italic;
+  }
+
+  .active{
+    color: chartreuse !important ;
+  }
+
+  nav {
+    backdrop-filter: blur(5px);
+    background-color: rgb(44, 109, 105) !important;
+    border: 40px;
+  }
+  #wrapper {
+    overflow-x: hidden;
+  }
+  
+  /* footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: #1bdda6;
+} */
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }

@@ -1,0 +1,32 @@
+{% include 'header.html' %}
+
+{% comment %} Cards start Here {% endcomment %}
+
+<section>
+  {%for i  in subjectData%}
+  <div class="card mb-3" style="max-width: 500px;">
+        <a href="http://127.0.0.1:8000/subject/{{forloop.counter}}">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/static/{{i.Subject_image}}" class="img-fluid rounded-start" alt="course1">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{i.subject_name}}</h5>
+              <p class="card-text">{{i.subject_description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    {% endfor %}
+  </div>
+</section>
+
+{% comment %} End of card section {% endcomment %}
+{% comment %} 
+
+{'subject': <Subjects: UnlockTool>, 'videos': <QuerySet [<Video: Video 1>, <Video: video 2>, <Video: video 3>, <Video: viddoe 4>]>} 
+  
+{% endcomment %}
