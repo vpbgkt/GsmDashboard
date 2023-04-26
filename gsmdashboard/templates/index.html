@@ -1,14 +1,27 @@
-{% include 'header.html' %}
-<main>
+{% include 'pages/header.html' %}
 
-  
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <video controls poster="path_to_poster_image.jpg" class="w-100"  controls width="1000" height="650"> 
+        <source src="path_to_video.mp4" type="video/mp4">
+        <source src="path_to_video.webm" type="video/webm">
+        <p>Your browser does not support HTML5 video. Please upgrade your browser to see the video.</p>
+      </video>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div class="text-center">
+        <h2>Watch our video</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="path_to_video.mp4" class="btn btn-primary">Play now</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <a href="#" ><h2>Test btn</h2> </a>
-        </main>
-
-    <footer>
-      <p>&copy; 2023 My Website</p>
-    </footer>
+    
+      {% include 'pages/footer.html' %}
+   
 
     {% comment %} <script src="script.js"></script> {% endcomment %}
   </body>
