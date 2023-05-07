@@ -36,7 +36,7 @@ def eclass_list(request):
     eclasses = Eclass.objects.all()
     context = {'eclasses': eclasses}
     
-    return render(request, 'pages/eclass_list.html', context)
+    return render(request, 'pages/classeslist.html', context)
 
 
 def subject_videos(request, subject_id):

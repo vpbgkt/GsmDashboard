@@ -1,6 +1,6 @@
-{% include 'pages/header.html' %}
+{% extends 'pages/basic.html'%}
 
-{% comment %} Cards start Here {% endcomment %}
+{% block content %}
 
 <section>
   <div class="card-container">
@@ -17,8 +17,9 @@
     {% endfor %}
   </div>
 </section>
-{% include 'pages/footer.html' %}
-{% comment %} End of card section {% endcomment %}
+
+{% endblock %}
+
 {% comment %} 
 
 {'subject': <Subjects: UnlockTool>, 'videos': <QuerySet [<Video: Video 1>, <Video: video 2>, <Video: video 3>, <Video: viddoe 4>]>} 

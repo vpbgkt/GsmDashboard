@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Subjects',
     'Video',
-    'Eclass'
+    'Eclass',
+    'accounts'
 ]
 
 MIDDLEWARE = [

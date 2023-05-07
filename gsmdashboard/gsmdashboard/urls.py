@@ -23,9 +23,9 @@ urlpatterns = [
     path('', views.homepage),
     path('aboutus/', views.aboutus, name='aboutus'),
     path('subject/', views.subject, name='subject'),
-    path('eclass_list/', views.eclass_list, name='eclass_list'),
+    path('Classes/', views.eclass_list, name='eclass_list'),
     path('subject/<subject_id>/', views.subject_videos, name='subject_videos'),
     # path('eclass_list/<int:eclass_id>/', name='subjects'),
-    path('eclass_list/<str:class_name>/',views.subject, name='eclass_list'),
+    path('Classes/<str:class_name>/',views.subject, name='eclass_list'),
     path('contect/', views.contect, name='contect'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # New

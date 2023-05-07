@@ -23,7 +23,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/' %} active {%endif %}" href="http://127.0.0.1:8000/" style="margin: 0 50px;">Home</a>
-                    </li>   
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/eclass_list/' %} active {%endif %}" href="{% url 'eclass_list' %}" style="margin: 0 50px;">Classes</a>
                     </li>
@@ -35,7 +35,18 @@
                     </li>
                 </ul>
             </div>
-        </nav> 
+        </nav>
         </div>
     </header>
 </section>
+  {% block content %} {% endblock %}
+  
+  <footer class="bg-light text-center text-lg-start fixed-bottom">
+    <div class="text-center p-3">
+    &copy; 2023 Dashboard. All rights reserved.
+    </div>
+  </footer>
+
+    {% comment %} <script src="script.js"></script> {% endcomment %}
+  </body>
+</html>
