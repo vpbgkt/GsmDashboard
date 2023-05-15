@@ -1,4 +1,4 @@
-.nav-item {
+.nav-btn {
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
@@ -16,7 +16,7 @@
     transition: all 0.2s ease-in;
 }
 
-.nav-item:hover,
+.nav-btn:hover,
 .css-sub-videos:hover {
     background: z;
     -webkit-box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
@@ -25,12 +25,12 @@
     transition: all 0.2s ease-out;
 }
 
-.nav-item:hover::before {
+.nav-btn:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
-.nav-item::before {
+.nav-btn::before {
     content: '';
     display: block;
     width: 0px;
@@ -75,7 +75,7 @@
     }
 }
 
-.nav-item:active {
+.nav-btn:active {
     -webkit-box-shadow: 0 0 0 0 transparent;
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
@@ -121,7 +121,7 @@
 
 /* Universal button */
 
-button {
+.subvidoes-nav-btn {
     width: 150px;
     height: 60px;
     border: 3px solid #315cfd;
@@ -135,7 +135,7 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
-button:hover {
+.subvidoes-nav-btn:hover {
     background: #c4c4c4;
     color: white;
     font-size: 1.5em;
@@ -210,3 +210,183 @@ button:hover {
 
 
 /* css-sub-videos is class for videos list a tag */
+
+
+/* CSS for sign up form */
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    -webkit-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    -webkit-text-decoration: underline royalblue;
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.form label .input:-moz-placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:-ms-input-placeholder+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    -webkit-transform: .3s ease;
+    -ms-transform: .3s ease;
+    transform: .3s ease;
+}
+
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+
+/* END CSS for sign up form */
