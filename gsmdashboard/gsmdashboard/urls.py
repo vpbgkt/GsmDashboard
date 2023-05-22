@@ -28,4 +28,5 @@ urlpatterns = [
     # path('eclass_list/<int:eclass_id>/', name='subjects'),
     path('Classes/<str:class_name>/',views.subject, name='eclass_list'),
     path('contect/', views.contect, name='contect'),
+    path('signup', views.signup, name='signup'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # New
